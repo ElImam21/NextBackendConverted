@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import { convertDocxToPdf } from "@/services/docx-to-pdf/convert.service";
 
@@ -8,6 +10,7 @@ const ALLOWED_MIME =
 
 export async function POST(req: Request) {
   try {
+    console.log("ENV:", process.env.CLOUDCONVERT_API_KEY);
     const formData = await req.formData();
     const file = formData.get("file") as File;
 

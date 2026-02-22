@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import { convertTxtToPdf } from "@/services/txt-to-pdf/convert.service";
 

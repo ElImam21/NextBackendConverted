@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import { convertTxtToDocx } from "@/services/txt-to-docx/convert.service";
 

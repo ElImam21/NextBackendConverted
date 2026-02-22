@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import { convertPngToWebp } from "@/services/png-to-webp/convert.service";
 
