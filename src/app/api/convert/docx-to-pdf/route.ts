@@ -10,7 +10,6 @@ const ALLOWED_MIME =
 
 export async function POST(req: Request) {
   try {
-    console.log("ENV:", process.env.CLOUDCONVERT_API_KEY);
     const formData = await req.formData();
     const file = formData.get("file") as File;
 
